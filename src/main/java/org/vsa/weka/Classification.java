@@ -160,7 +160,7 @@ public class Classification {
             labeled.instance(i).setClassValue(clsLabel);
         }
 
-        System.out.println("Wyswietl instancje " + clsLabel);
+        System.out.println("Instâncias de exibição " + clsLabel);
     }
 
     /*
@@ -291,11 +291,11 @@ public class Classification {
         }
 
         summary += "\n";
-        summary += "---------Klasifikacja-------------- \n";
+        summary += "---------Classificação-------------- \n";
         summary += clas.toString();
         Evaluate eval = new Evaluate();
         Evaluation evalu = eval.crossValidation(clas, data, conf.getFolds());
-        summary += "----------Ewaluacja---------------- \n";
+        summary += "----------Avaliação---------------- \n";
         summary += evalu.toSummaryString();
         summary += evalu.toMatrixString();
 
