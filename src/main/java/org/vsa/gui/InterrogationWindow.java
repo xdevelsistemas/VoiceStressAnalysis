@@ -82,16 +82,16 @@ public class InterrogationWindow extends JDialog {
         mnuPomoce = new javax.swing.JMenu();
         mnuShowFullCepstrum = new javax.swing.JMenuItem();
 
-        jMenu1.setText("File");
+        jMenu1.setText("Arquivo");
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("Editar");
         jMenuBar1.add(jMenu2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Szczegóły");
+        setTitle("Detalhes");
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder("Odpowiedzi")));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder("Respostas")));
 
         lbRecordings.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane1.setViewportView(lbRecordings);
@@ -107,9 +107,9 @@ public class InterrogationWindow extends JDialog {
             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 421, Short.MAX_VALUE)
         );
 
-        jMenu4.setText("Akcja");
+        jMenu4.setText("Ação");
 
-        mnuShowWaveform.setText("Pokaż nagranie");
+        mnuShowWaveform.setText("Mostrar registro");
         mnuShowWaveform.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuShowWaveformActionPerformed(evt);
@@ -117,7 +117,7 @@ public class InterrogationWindow extends JDialog {
         });
         jMenu4.add(mnuShowWaveform);
 
-        mnuShowSpectrum.setText("Pokaż spektrum");
+        mnuShowSpectrum.setText("Mostrar espectro");
         mnuShowSpectrum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuShowSpectrumActionPerformed(evt);
@@ -125,7 +125,7 @@ public class InterrogationWindow extends JDialog {
         });
         jMenu4.add(mnuShowSpectrum);
 
-        mnuShowCepstrum.setText("Pokaż cepstrum");
+        mnuShowCepstrum.setText("Mostrar cepstrum");
         mnuShowCepstrum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuShowCepstrumActionPerformed(evt);
@@ -133,7 +133,7 @@ public class InterrogationWindow extends JDialog {
         });
         jMenu4.add(mnuShowCepstrum);
 
-        mnuShowF0.setText("Pokaż ton fundamentalny");
+        mnuShowF0.setText("Mostrar tons fundamentais");
         mnuShowF0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuShowF0ActionPerformed(evt);
@@ -141,7 +141,7 @@ public class InterrogationWindow extends JDialog {
         });
         jMenu4.add(mnuShowF0);
 
-        mnuShowDistribution.setText("Pokaż rozkład tonu fundamentalnego");
+        mnuShowDistribution.setText("Mostrar distribuição do tom fundamental");
         mnuShowDistribution.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuShowDistributionActionPerformed(evt);
@@ -149,7 +149,7 @@ public class InterrogationWindow extends JDialog {
         });
         jMenu4.add(mnuShowDistribution);
 
-        mnuDetails.setText("Szczegóły");
+        mnuDetails.setText("Detalhes");
         mnuDetails.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuDetailsActionPerformed(evt);
@@ -159,9 +159,9 @@ public class InterrogationWindow extends JDialog {
 
         jMenuBar2.add(jMenu4);
 
-        mnuPomoce.setText("Pomoce");
+        mnuPomoce.setText("Auxilio");
 
-        mnuShowFullCepstrum.setText("Pokaż pełne cepstrum");
+        mnuShowFullCepstrum.setText("Ver cepstrum completo");
         mnuShowFullCepstrum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuShowFullCepstrumActionPerformed(evt);

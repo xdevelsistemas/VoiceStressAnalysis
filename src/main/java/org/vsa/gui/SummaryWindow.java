@@ -42,7 +42,7 @@ public class SummaryWindow extends javax.swing.JDialog {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Podsumowanie");
+        setTitle("Resumo");
 
         txtSummary.setColumns(20);
         txtSummary.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N

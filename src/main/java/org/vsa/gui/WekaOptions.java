@@ -39,11 +39,11 @@ public class WekaOptions extends JDialog {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Opcje");
+        setTitle("Opções");
 
         ComboBoxAlgorytmy.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "J48", "Naive Bayes", "Lazy IBk", "Random Tree", "SMO", "PART", "Decision Table", "Multi Layer", "Kstar" }));
 
-        CheckBoxFiltry.setText("uzyj filtru danych");
+        CheckBoxFiltry.setText("por favor, use o filtro de dados");
         CheckBoxFiltry.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 comboboxFiltryitemchange(evt);
@@ -53,27 +53,27 @@ public class WekaOptions extends JDialog {
         ComboBoxFiltry.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "CSF greedy", "CSF best first", "Filtered CSF greedy", "Filtered CSF best first", "Consistency greedy", "Consistency best first" }));
         ComboBoxFiltry.setEnabled(false);
 
-        ButtonAkcpet.setText("Akceptuj");
+        ButtonAkcpet.setText("Aceitar");
         ButtonAkcpet.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButtonAkcpetMouseClicked(evt);
             }
         });
 
-        ButtonCancel.setText("Anuluj");
+        ButtonCancel.setText("Cancelar");
         ButtonCancel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButtonCancelMouseClicked(evt);
             }
         });
 
-        jLabel1.setText("Alogrytm:");
+        jLabel1.setText("Algoritimo:");
 
-        jLabel2.setText("Filtry:");
+        jLabel2.setText("Filtros:");
 
         TextFiledFolds.setText("10");
 
-        jLabel3.setText("Evaluation folds");
+        jLabel3.setText("Dobras de avaliação");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

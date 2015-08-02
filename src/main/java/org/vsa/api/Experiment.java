@@ -200,8 +200,8 @@ public class Experiment {
      */
     public String getStressedSummaryString() {
         return this.getInterrogation().toSummaryString() + "\n" +
-            "Liczba nagrań zestresowanych: " + numStressedInstances + "\n" +
-            "\n--- Stressed instances evaluation --\n" +
+            "Número de gravações estressadas: " + numStressedInstances + "\n" +
+            "\n--- Avaliação de instâncias de estresse --\n" +
             "Mean: " + String.format("%.2f", getStressedMean()) + " \n" +
             "Median: " + String.format("%.2f", getStressedMedian()) + " \n" +
             "Min: " + String.format("%.2f", getStressedMin()) + " \n" +
@@ -221,8 +221,8 @@ public class Experiment {
      */
     public String getUnstressedSummaryString() {
         return this.getInterrogation().toSummaryString() + "\n" +
-            "Liczba nagrań niezestresowanych: " + numUntressedInstances + "\n" +
-            "\n--- Unstressed instances evaluation --\n" +
+            "Número de gravações não estressadas: " + numUntressedInstances + "\n" +
+            "\n--- Avaliação de instâncias não estressadas --\n" +
             "Mean: " + String.format("%.2f", getUnstressedMean()) + " \n" +
             "Median: " + String.format("%.2f", getUnstressedMedian()) + " \n" +
             "Min: " + String.format("%.2f", getUnstressedMin()) + " \n" +
@@ -241,8 +241,8 @@ public class Experiment {
      */
     public String toSummaryString() {
         return this.getInterrogation().toSummaryString() + "\n" +
-            "Liczba nagrań zestresowanych: " + numStressedInstances + "\n" +
-            "Liczba nagrań niezestresowanych: " + numUntressedInstances + "\n" +
+            "Número de gravações estressadas: " + numStressedInstances + "\n" +
+            "Número de gravações não estressadas: " + numUntressedInstances + "\n" +
 
             "\n--- Stressed instances evaluation --\n" +
             "Mean: " + String.format("%.2f", getStressedMean()) + " \n" +

@@ -44,13 +44,13 @@ public class PlotUtil {
         // plot
         Plot2DPanel plot = new Plot2DPanel();
 //        plot.setLegendOrientation("EAST");
-//        plot.addLegend("Nagranie");
-        plot.addLinePlot("Nagranie", x, signal);
-        plot.setAxisLabel(0, "Czas [s]");
-        plot.setAxisLabel(1, "Amplituda");
+//        plot.addLegend("Gravação");
+        plot.addLinePlot("Gravação", x, signal);
+        plot.setAxisLabel(0, "Tempo [s]");
+        plot.setAxisLabel(1, "Amplitude");
 
         // frame
-        JDialog window = new JDialog(parent, "Nagranie");
+        JDialog window = new JDialog(parent, "Gravação");
         window.setSize(600, 600);
         window.setContentPane(plot);
         window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -94,13 +94,13 @@ public class PlotUtil {
         // plot
         Plot2DPanel plot = new Plot2DPanel();
 //        plot.setLegendOrientation("EAST");
-//        plot.addLegend("Spectrum");
-        plot.addLinePlot("Spectrum", x, spectrum);
-        plot.setAxisLabel(0, "Frequency [Hz]");
-        plot.setAxisLabel(1, "Natężenie");
+//        plot.addLegend("Espectro");
+        plot.addLinePlot("Espectro", x, spectrum);
+        plot.setAxisLabel(0, "Frequência [Hz]");
+        plot.setAxisLabel(1, "Intensidade");
 
         // window
-        JDialog window = new JDialog(parent, "Spectrum");
+        JDialog window = new JDialog(parent, "Espectro");
         window.setSize(600, 600);
         window.setContentPane(plot);
         window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -156,7 +156,7 @@ public class PlotUtil {
 //        plot.addLegend("Cepstrum");
         plot.addLinePlot("Cepstrum", x, y);
         plot.setAxisLabel(0, "Quefrency [s]");
-        plot.setAxisLabel(1, "Amplituda");
+        plot.setAxisLabel(1, "Amplitude");
 
         // window
         JDialog window = new JDialog(parent, "Cepstrum");
@@ -208,7 +208,7 @@ public class PlotUtil {
 //        plot.addLegend("Cepstrum");
         plot.addLinePlot("Cepstrum", x, y);
         plot.setAxisLabel(0, "Quefrency [s]");
-        plot.setAxisLabel(1, "Amplituda");
+        plot.setAxisLabel(1, "Amplitude");
 
         // window
         JDialog window = new JDialog(parent, "Cepstrum");
@@ -238,12 +238,12 @@ public class PlotUtil {
         Plot2DPanel plot = new Plot2DPanel();
 //        plot.setLegendOrientation("EAST");
 //        plot.addLegend("Ton Podstawowy");
-        plot.addLinePlot("Ton Podstawowy", x, y);
-        plot.setAxisLabel(0, "Nr okna");
-        plot.setAxisLabel(1, "Częstotliwość [Hz]");
+        plot.addLinePlot("Tom básico", x, y);
+        plot.setAxisLabel(0, "Sem janelas");
+        plot.setAxisLabel(1, "Frequência [Hz]");
 
         // window
-        JDialog window = new JDialog(parent, "Ton Podstawowy");
+        JDialog window = new JDialog(parent, "Tom básico");
         window.setSize(600, 600);
         window.setContentPane(plot);
         window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -284,12 +284,12 @@ public class PlotUtil {
         Plot2DPanel plot = new Plot2DPanel();
 //        plot.setLegendOrientation("EAST");
 //        plot.addLegend("Rozkład normanlny tonu fundamentalnego");
-        plot.addLinePlot("Rozkład normanlny tonu fundamentalnego", x, y);
-        plot.setAxisLabel(0, "Częstotliwość [Hz]");
-        plot.setAxisLabel(1, "Rozkład");
+        plot.addLinePlot("Distribuição normal de tom fundamental", x, y);
+        plot.setAxisLabel(0, "Frequência [Hz]");
+        plot.setAxisLabel(1, "Distribuição");
 
         // window
-        JDialog window = new JDialog(parent, "Ton Podstawowy");
+        JDialog window = new JDialog(parent, "Tom básico");
         window.setSize(600, 600);
         window.setContentPane(plot);
         window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -330,13 +330,13 @@ public class PlotUtil {
         // plot
         Plot2DPanel plot = new Plot2DPanel();
 //        plot.setLegendOrientation("EAST");
-//        plot.addLegend("Rozkład normanlny tonu fundamentalnego");
-        plot.addLinePlot("Rozkład normanlny", x, y);
-        plot.setAxisLabel(0, "Częstotliwość [Hz]");
-        plot.setAxisLabel(1, "Rozkład");
+//        plot.addLegend("Distribuição normal de tom fundamental");
+        plot.addLinePlot("Distribuição normal", x, y);
+        plot.setAxisLabel(0, "Frequência [Hz]");
+        plot.setAxisLabel(1, "Distribuição");
 
         // window
-        JDialog window = new JDialog(parent, "Rozkład normanlny");
+        JDialog window = new JDialog(parent, "Distribuição normal");
         window.setSize(600, 600);
         window.setContentPane(plot);
         window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
